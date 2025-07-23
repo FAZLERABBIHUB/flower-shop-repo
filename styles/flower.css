@@ -1,0 +1,103 @@
+/* font link */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* shared style */
+.noto-serif {
+  font-family: "Noto Serif", serif;
+}
+.inter {
+  font-family: "Inter", sans-serif;
+}
+
+/* nav bar style */
+.navbar {
+  display: flex;
+  max-width: 1140px;
+  max-height: 72px;
+  margin: 30px 150px 0px 150px;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-logo {
+  width: 135px;
+  height: 82px;
+}
+.nav-list {
+  display: flex;
+  gap: 48px;
+}
+.nav-item {
+  list-style: none;
+}
+.nav-link {
+  text-decoration: none;
+}
+.banner {
+  display: flex;
+  max-width: 1140px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 120px 150px 0px 150px;
+}
+#home {
+  color: rgba(37, 36, 50, 1);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+#shop,
+#about {
+  color: rgba(137, 135, 161, 1);
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+}
+#cart {
+  color: rgba(0, 0, 0, 1);
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  gap: 10px;
+}
+#color {
+  color: #e95a08;
+}
+.banner-h {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.banner-p {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0px;
+}
+.display-hidden {
+  display: flex;
+  gap: 48px;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    margin: 20px 20px 0px 20px;
+  }
+  .display-hidden {
+    display: none;
+  }
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .banner-img {
+    text-align: center;
+  }
+  .banner-content {
+    margin-top: 28px;
+    max-width: 361px;
+    max-height: 147px;
+  }
+  .banner-h {
+    font-size: 1.4rem;
+  }
+  .banner-p {
+    font-size: 1rem;
+  }
+}
