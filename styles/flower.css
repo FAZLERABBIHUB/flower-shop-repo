@@ -126,6 +126,47 @@
   gap: 20px;
   margin-top: 49px;
 }
+/* flower lover section */
+.lover-section {
+  max-width: 1140px;
+  margin: 214px 150px 0px 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.lover-badge {
+  position: absolute;
+  z-index: 2;
+  transform: translate y(-200px -200px);
+  max-width: 286px;
+  max-height: 286px;
+  transform: translate(365px, -135px);
+}
+.lover-store {
+  position: relative;
+  z-index: 1;
+  max-width: 540px;
+  max-height: 597px;
+}
+
+.lover-content {
+  max-width: 540px;
+  margin: 38px 0px 38px 60px;
+}
+.lover-head {
+  color: rgba(0, 0, 0, 1);
+  font-size: 3.1rem;
+  font-weight: 700;
+}
+.lover-list {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.3rem;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 @media screen and (max-width: 600px) {
   .navbar {
     margin: 20px 20px 0px 20px;
@@ -168,5 +209,21 @@
   }
   .cards-btn {
     font-size: 12px;
+  }
+  .lover-section {
+    flex-direction: column;
+  }
+  .lover-badge {
+    display: none;
+  }
+  .lover-list {
+    font-size: 0.8rem;
+  }
+  .lover-head {
+    font-size: 1.5rem;
+    white-space: nowrap;
+  }
+  .lover-content {
+    margin: 0px 0px 0px 0px;
   }
 }
