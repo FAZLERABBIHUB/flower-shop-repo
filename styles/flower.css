@@ -115,6 +115,7 @@
   font-size: 1rem;
   border: none;
   padding: auto;
+  width: 100%;
 }
 .cards-content {
   max-width: 270px;
@@ -137,11 +138,11 @@
 .lover-badge {
   position: absolute;
   z-index: 2;
-  transform: translate y(-200px -200px);
+  transform: translate(330px, -135px);
   max-width: 286px;
   max-height: 286px;
-  transform: translate(365px, -135px);
 }
+
 .lover-store {
   position: relative;
   z-index: 1;
@@ -166,7 +167,26 @@
   flex-direction: column;
   gap: 20px;
 }
-
+/* deal section */
+.deal-section {
+  max-width: 100%;
+  margin: 130px 150px 0px 150px;
+  text-align: center;
+}
+#latest {
+  color: rgba(233, 90, 8, 1);
+}
+.deal-head {
+  font-size: 3.125rem;
+  font-weight: 700;
+}
+.deal-content {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  max-width: 888px;
+  margin: auto;
+}
 @media screen and (max-width: 600px) {
   .navbar {
     margin: 20px 20px 0px 20px;
