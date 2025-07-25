@@ -146,13 +146,15 @@
   transform: translate(330px, -135px);
   max-width: 286px;
   max-height: 286px;
+  animation: rotate-box 4s linear infinite;
 }
-
-.lover-store {
-  position: relative;
-  z-index: 1;
-  max-width: 540px;
-  max-height: 597px;
+@keyframes rotate-box {
+  0% {
+    transform: translate(330px, -135px) rotate(0deg);
+  }
+  100% {
+    transform: translate(330px, -135px) rotate(360deg);
+  }
 }
 
 .lover-content {
@@ -304,6 +306,7 @@
   max-width: 1440px;
   gap: 110px;
   margin: 50px 160px 50px 160px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .footer-content {
   max-width: 359px;
