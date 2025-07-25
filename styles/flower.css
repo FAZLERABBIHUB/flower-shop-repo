@@ -12,6 +12,10 @@
 * {
   margin: 0px;
 }
+.btn {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+}
 /* nav bar style */
 .navbar {
   display: flex;
